@@ -1,1 +1,18 @@
-Sentence:  <strong>@Model["sentence"]</strong> contains word <strong>@Model["word"]</strong> @Model["repetitiveNumber"] times.;
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+<div class="row">
+  <div class="sentence output col-md-12">
+    Sentence: <br> <strong class="result">@Model["sentence"]</strong><br> contains word <br><strong class="result">@Model["word"]<br> @Model["repetitiveNumber"] </strong> times.
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 top">
+    <img class="home" src="Content\img\home.ico" alt="home"><a href="/home_page"></a></img>
+  </div>
+</div>
+<!-- <div class="row">
+  <div class="col-md-12 footer">
+
+  </div>
+</div> -->

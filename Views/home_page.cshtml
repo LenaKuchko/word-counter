@@ -1,31 +1,23 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
-<!-- <div class="row">
-  <div class="col-md-12">
-    <h1> </h1>
-  </div>
-</div> -->
 <div class="row">
-
-    <form class="" action="/result" method="post" autocomplete="off">
-      <div class="word col-md-12">
-        <div class="word-group col-md-9">
-          <label for="word">How many times I tape word:</label><br>
-          <input class="" type="text" name="word" autofocus >
-        </div>
-        <div class="col-md-3">
-          <img src="Content\img\pencil.ico" alt="pencil">
-        </div>
+  <form class="" action="/result" method="post" autocomplete="off">
+    <div class="word col-md-12">
+      <div class="word-group col-md-9">
+        <label for="word">How many times I tape word:</label><br>
+        <input class="" type="text" name="word"  placeholder="word">
       </div>
-      <div class="sentence col-md-12">
-        <div class="sentence-group">
-          <label for="sentence">in this sentence</label><br>
-          <input class="" type="text" name="sentence">
-        </div>
-        <button type="submit" name="button"><img src="Content\img\note.ico"></button>
+      <div class="col-md-3">
+        <img src="Content\img\pencil.ico" alt="pencil">
       </div>
-    </form>
-
-
+    </div>
+    <div class="sentence col-md-12">
+      <div class="sentence-group">
+        <label for="sentence">in this sentence</label><br>
+        <input class="" type="text" name="sentence" placeholder="sentence">
+      </div>
+      <button type="submit" name="button"><img src="Content\img\note.ico"></button>
+    </div>
+  </form>
 </div>

@@ -1,9 +1,12 @@
+input {
+  border: none;
+}
 .word input {
-  border: 2px solid white;
   background-color: #564256;
   text-align: center;
 }
-.word input:active {
+
+.word input:visited {
   border: none;
   background-color: #564256;
 }
@@ -15,20 +18,24 @@
 .word {
   height: auto;
   text-align: center;
-  font-size: 35px;
+  font-size: 60px;
   background-color: #564256;
   color: #F5E663;
 }
 .word-group, .sentence-group {
   padding: 55px;
 }
-.sentence {
+.sentence, .result {
   height: auto;
   text-align: center;
-  font-size: 35px;
+  font-size: 65px;
   background-color: #F5E663;
   color: #564256;
 }
+.output {
+  padding: 25px;
+}
+
 .sentence input {
   text-align: center;
   border: none;
@@ -46,8 +53,22 @@
 button {
   background-color: #F5E663;
   border: none;
-
 }
 .col-md-3 {
   text-align: left;
+}
+body {
+  font-family: 'Coiny', cursive;
+}
+::-webkit-input-placeholder {
+
+    opacity: 0.3 !important;
+  }
+.top {
+  background-color: #564256;
+  height: 100px;
+}
+.result {
+  font-size: 60px;
+  color: #FC814A;
 }
