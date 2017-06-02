@@ -16,13 +16,12 @@ namespace WordCounter
         }
         else
         {
-          int repetitiveNumber = instance.CountRepeats(instance.ConvertSentenceToList(Request.Form["sentence"]), Request.Form["word"]);
+          string modifiedString = instance.RemoveSyntaxSigns(Request.Form["sentence"]);
+          int repetitiveNumber = instance.CountRepeats(instance.ConvertSentenceToList(modifiedString), Request.Form["word"]);
           Dictionary <string, object> result = new Dictionary<string, object>(){};
           result.Add("sentence", Request.Form["sentence"]);
           result.Add("word", Request.Form["word"]);
           result.Add("repetitiveNumber", repetitiveNumber);
-
-          // string result = "Sentence: " + Request.Form["sentence"] + " contains word " + Request.Form["word"] + " "  + repetitiveNumber + " times.";
           return View ["result.cshtml", result];
         }
       };
