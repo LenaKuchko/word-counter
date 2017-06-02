@@ -1,14 +1,24 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
-<form class="" action="/result" method="post">
-  <div class="form-group">
-    <label for="sentence">Please enter a sentence</label>
-    <input type="text" name="sentence">
+<!-- <div class="row">
+  <div class="col-md-12">
+    <h1> </h1>
   </div>
-  <div class="form-group">
-    <label for="word">Please enter a word</label>
-    <input type="text" name="word">
-  </div>
-  <button type="submit" name="button">Get repetitive count</button>
-</form>
+</div> -->
+<div class="row">
+
+    <form class="" action="/result" method="post">
+      <div class="word col-md-12">
+        <label for="word">How many times I tape word:</label><br>
+        <input class="" type="text" name="word" autofocus >
+      </div>
+      <div class="sentence col-md-12">
+        <label for="sentence">in this sentence</label><br>
+        <input class="" type="text" name="sentence">
+      </div>
+      <button type="submit" name="button">Get repetitive count</button>
+    </form>
+
+
+</div>

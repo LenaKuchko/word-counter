@@ -1,0 +1,41 @@
+.word input {
+  border: 2px solid white;
+  background-color: #564256;
+  text-align: center;
+}
+.word input:active {
+  border: none;
+  background-color: #564256;
+}
+.word input:focus {
+  border: none;
+  outline: none;
+  background-color: #564256;
+}
+.word {
+  height: 150px;
+  text-align: center;
+  font-size: 35px;
+  background-color: #564256;
+  color: #F5E663;
+}
+.sentence {
+  height: 150px;
+  text-align: center;
+  font-size: 35px;
+  background-color: #F5E663;
+  color: #564256;
+}
+.sentence input {
+  border: none;
+  background-color: #F5E663;
+}
+.sentence input:active {
+  border: none;
+  background-color: #F5E663;
+}
+.sentence input:focus {
+  border: none;
+  outline: none;
+  background-color: #F5E663;
+}
