@@ -55,5 +55,17 @@ namespace WordCounter
       Assert.Equal(0, result);
       Console.WriteLine("SentenceDoesntContainWord " + result);
     }
+    [Fact]
+    public void CountRepeats_CaseSensitive()
+    {
+      //Arrange
+      List<string> testList = new List<string>() {"Rose", "rOsE", "TO", "put", "rOSe", "roseS", "ROSE"};
+      //Act
+      RepeatConter instance = new RepeatConter();
+      int result = instance.CountRepeats(testList, "rose");
+      //Assert
+      Assert.Equal(3, result);
+      Console.WriteLine("CountRepeats_CaseSensitive " + result);
+    }
   }
 }
