@@ -2,7 +2,7 @@
 ## Created by Olena Kuchko
 
 ### Description
-An app that allows user to create and store contact information such as contact's name, phone number and address. Also user can add groups to address book and link contacts to this groups. User also is able to clear whole address book or just delete particular contact.
+An app that allows user to know how many times particular word appears in the sentence, that user enter.
 
 ### Installation
 1. Download or clone the repository from https://github.com/LenaKuchko/address-book.git.
@@ -12,9 +12,10 @@ An app that allows user to create and store contact information such as contact'
 5. Using IDE of your choice to open code.
 
 ### Known Bugs
-No strict rules for phone Number input.
-If user created an empty contact he is not able to delete it.
+If user enter two or more word in the search field, app returns result 0.
+
 | Behavior | Input | Output |
+|Remove characters from input sentence such as ! , ? : ; -| Rose? rose: to put- roes!| Rose rose to put roes |  
 |Convert sentence to List of words| Rose rose to put rose roes on her rows of roses| List<string> words|
 |App returns number of repetitive words (case insensitive)| Rose rose to put rose roes on her rows of roses. rose| 2 |
 |User enter a word which is not contained in sentence | Rose rose to put rose roes on her rows of roses. tulip| 0 |
