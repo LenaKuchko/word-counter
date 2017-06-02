@@ -29,6 +29,7 @@ namespace WordCounter
       int result = instance.CountRepeats(testList, "rose");
       //Assert
       Assert.Equal(3, result);
+      Console.WriteLine("CountRepeats_CaseInsensitive " + result);
 
     }
   }
