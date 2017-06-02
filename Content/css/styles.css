@@ -13,20 +13,24 @@
   background-color: #564256;
 }
 .word {
-  height: 150px;
+  height: auto;
   text-align: center;
   font-size: 35px;
   background-color: #564256;
   color: #F5E663;
 }
+.word-group, .sentence-group {
+  padding: 55px;
+}
 .sentence {
-  height: 150px;
+  height: auto;
   text-align: center;
   font-size: 35px;
   background-color: #F5E663;
   color: #564256;
 }
 .sentence input {
+  text-align: center;
   border: none;
   background-color: #F5E663;
 }
