@@ -7,6 +7,12 @@ namespace WordCounter
 {
   public class RepeatConter
   {
+    public string RemoveSyntaxSign(string sentence)
+    {
+      
+      return sentence;
+    }
+
     public List<string> ConvertSentenceToList(string sentence)
     {
       List<string> words = sentence.ToLower().Split(' ').ToList();

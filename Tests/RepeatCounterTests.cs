@@ -8,6 +8,17 @@ namespace WordCounter
   public class WordCounterTests
   {
     [Fact]
+    public void ClearString()
+    {
+      //Arrange
+      string sentence = "Rose rose to put roses";
+      //Act
+      RepeatConter instance = new RepeatConter();
+      string result = instance.RemoveSyntaxSign("Rose? rose to put, roses!");
+      //Assert
+      Assert.Equal(sentence, result);
+    }
+    [Fact]
     public void Convert_SentenceToList()
     {
       //Arrange
