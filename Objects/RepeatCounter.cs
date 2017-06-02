@@ -15,7 +15,7 @@ namespace WordCounter
     // }
     public List<string> ConvertSentenceToList(string sentence)
     {
-      List<string> words = sentence.Split(' ').ToList();
+      List<string> words = sentence.ToLower().Split(' ').ToList();
       return words;
     }
 

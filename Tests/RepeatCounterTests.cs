@@ -12,7 +12,7 @@ namespace WordCounter
     {
       //Arrange
       string sentence = "Rose rose to put roses";
-      List<string> testList = new List<string>() {"Rose", "rose", "to", "put", "roses"};
+      List<string> testList = new List<string>() {"rose", "rose", "to", "put", "roses"};
       //Act
       RepeatConter instance = new RepeatConter();
       List<string> resultList = instance.ConvertSentenceToList(sentence);
@@ -59,10 +59,10 @@ namespace WordCounter
     public void CountRepeats_CaseSensitive()
     {
       //Arrange
-      List<string> testList = new List<string>() {"Rose", "rOsE", "TO", "put", "rOSe", "roseS", "ROSE"};
+      string testSentence = "RoSe rosE TO pUt RosE roses";
       //Act
       RepeatConter instance = new RepeatConter();
-      int result = instance.CountRepeats(testList, "rose");
+      int result = instance.CountRepeats(instance.ConvertSentenceToList(testSentence), "rose");
       //Assert
       Assert.Equal(3, result);
       Console.WriteLine("CountRepeats_CaseSensitive " + result);
