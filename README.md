@@ -20,3 +20,7 @@ If user created an empty contact he is not able to delete it.
 |User enter a word which is not contained in sentence | Rose rose to put rose roes on her rows of roses. tulip| 0 |
 |Odd user's input like all capitalization, partial capitalization, etc.| RoSe rOse to put ROSE roes on her rows of roses. RosE | 3 |
 |User didn't enter the sentence | ______. rose|0|
+
+#### License
+This project is licensed under the MIT License.
+Copyright (c) 2017  Olena Kuchko

@@ -43,3 +43,11 @@
   outline: none;
   background-color: #F5E663;
 }
+button {
+  background-color: #F5E663;
+  border: none;
+
+}
+.col-md-3 {
+  text-align: left;
+}
