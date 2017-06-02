@@ -18,6 +18,9 @@ namespace WordCounter
       List<string> resultList = instance.ConvertSentenceToList(sentence);
       //Assert
       Assert.Equal(testList, resultList);
+      // foreach (string item in resultList) {
+      //   Console.WriteLine(item);
+      // }
     }
     // [Fact]
     // public void CountRepeats_returns_rightNumerOfRepetitions

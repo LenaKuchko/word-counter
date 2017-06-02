@@ -1,4 +1,6 @@
 using System;
+using System.IO;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace WordCounter
@@ -7,7 +9,7 @@ namespace WordCounter
   {
     public List<string> ConvertSentenceToList(string sentence)
     {
-      List<string> words = new List<string>();
+      List<string> words = sentence.Split(' ').ToList();
       return words;
     }
 
