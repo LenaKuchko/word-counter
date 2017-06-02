@@ -8,13 +8,13 @@ namespace WordCounter
   public class WordCounterTests
   {
     [Fact]
-    public void ClearString()
+    public void ClearString_removeSyntaxSigns()
     {
       //Arrange
       string sentence = "Rose rose to put roses";
       //Act
       RepeatConter instance = new RepeatConter();
-      string result = instance.RemoveSyntaxSign("Rose? rose to put, roses!");
+      string result = instance.RemoveSyntaxSigns("Rose? rose: to put, roses!");
       //Assert
       Assert.Equal(sentence, result);
     }

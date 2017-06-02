@@ -7,15 +7,16 @@ namespace WordCounter
 {
   public class RepeatConter
   {
-    public string RemoveSyntaxSign(string sentence)
+    public string RemoveSyntaxSigns(string sentence)
     {
-      
+      sentence = sentence.Replace(",", "").Replace("!", "").Replace("?", "").Replace("@", "").
+                          Replace("-", "").Replace(":", "").Replace(";", "");
       return sentence;
     }
 
-    public List<string> ConvertSentenceToList(string sentence)
+    public List<string> ConvertSentenceToList(string modifiedSentence)
     {
-      List<string> words = sentence.ToLower().Split(' ').ToList();
+      List<string> words = modifiedSentence.ToLower().Split(' ').ToList();
       return words;
     }
 
