@@ -18,14 +18,18 @@ namespace WordCounter
       List<string> resultList = instance.ConvertSentenceToList(sentence);
       //Assert
       Assert.Equal(testList, resultList);
-      // foreach (string item in resultList) {
-      //   Console.WriteLine(item);
-      // }
     }
-    // [Fact]
-    // public void CountRepeats_returns_rightNumerOfRepetitions
-    // {
-    //
-    // }
+    [Fact]
+    public void CountRepeats_CaseInsensitive()
+    {
+      //Arrange
+      List<string> testList = new List<string>() {"Rose", "rose", "to", "put", "rose", "roses", "rose"};
+      //Act
+      RepeatConter instance = new RepeatConter();
+      int result = instance.CountRepeats(testList, "rose");
+      //Assert
+      Assert.Equal(3, result);
+
+    }
   }
 }

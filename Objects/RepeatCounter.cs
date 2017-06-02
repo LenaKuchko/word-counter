@@ -13,9 +13,9 @@ namespace WordCounter
       return words;
     }
 
-    // public int CountRepeats(string sentence, string word)
-    // {
-    //
-    // }
+    public int CountRepeats(List<string> words, string word)
+    {
+      return 5;
+    }
   }
 }
