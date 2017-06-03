@@ -1,11 +1,11 @@
-# Address Book
+# Word Counter
 ## Created by Olena Kuchko
 
 ### Description
 An app that allows user to know how many times particular word appears in the sentence, that user enter.
 
 ### Installation
-1. Download or clone the repository from https://github.com/LenaKuchko/address-book.git.
+1. Download or clone the repository from https://github.com/LenaKuchko/word-counter.git.
 2. Using PowerShell (for Windows), navigate to the directory in which you downloaded project, then run dnx kestrel to run server.
 3. In your Web-browser enter - localhost:5004.
 4. If you want to work with program code install Mono (http://www.mono-project.com/download/) and Nancy framework (http://nancyfx.org/).
@@ -15,6 +15,7 @@ An app that allows user to know how many times particular word appears in the se
 If user enter two or more word in the search field, app returns result 0.
 
 | Behavior | Input | Output |
+|----------|-------|--------|
 |Remove characters from input sentence such as ! , ? : ; -| Rose? rose: to put- roes!| Rose rose to put roes |  
 |Convert sentence to List of words| Rose rose to put rose roes on her rows of roses| List<string> words|
 |App returns number of repetitive words (case insensitive)| Rose rose to put rose roes on her rows of roses. rose| 2 |
