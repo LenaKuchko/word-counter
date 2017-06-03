@@ -15,13 +15,14 @@ input {
   outline: none;
   background-color: #564256;
 }
-.word {
+.word,  .top a{
   height: auto;
   text-align: center;
   font-size: 60px;
   background-color: #564256;
   color: #F5E663;
 }
+
 .word-group, .sentence-group {
   padding: 55px;
 }
@@ -66,7 +67,10 @@ body {
   }
 .top {
   background-color: #564256;
-  height: 100px;
+  padding: 25px;
+  height: auto;
+  text-align: center;
+
 }
 .result {
   font-size: 60px;
